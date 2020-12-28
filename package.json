@@ -1,0 +1,27 @@
+{
+  "name": "tourism-ai",
+  "version": "1.0.0",
+  "description": "The tourism AI project with both backend and frontend projects.",
+  "scripts": {
+    "postinstall": "npm run install:api; npm run install:app",
+    "install:api": "npm install --prefix tourism_api",
+    "install:app": "npm install --prefix tourism-app",
+    "start:api": "npm start --prefix tourism_api",
+    "start:app": "npm start --prefix tourism-app",
+    "start": "concurrently \"npm run start:api\" \"npm run start:frontend\""
+  },
+  "workspaces": [
+    "tourism-app",
+    "tourism-api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hilson-Alex/tourism-ai.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hilson-Alex/tourism-ai/issues"
+  },
+  "homepage": "https://github.com/Hilson-Alex/tourism-ai#readme"
+}
