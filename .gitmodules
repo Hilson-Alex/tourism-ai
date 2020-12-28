@@ -1,0 +1,8 @@
+[submodule "tourism_api"]
+	path = tourism_api
+	url = https://github.com/Hilson-Alex/tourism_api.git
+	branch = main
+[submodule "tourism-app"]
+	path = tourism-app
+	url = https://github.com/Hilson-Alex/tourism-app.git
+	branch = main
